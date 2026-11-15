@@ -16,6 +16,8 @@ Each one is rated on maintenance, TypeScript support, edge runtimes (Cloudflare 
 
 The bot's design and the hosting comparison (Workers limits and pricing, Heroku, Render, Fly.io, Tailscale Funnel) are in [#40](https://github.com/repobuddy/github-app/issues/40). This page does not repeat them. It answers which library, if any, the Stage 1 workflows and the Stage 2 router should be built on.
 
+How the app's key and tokens should reach CI jobs across orgs, and outside installers, is in [app-token-distribution.md](app-token-distribution.md).
+
 ## Verdict
 
 **Drop Probot. Build Stage 2 on Octokit directly, and keep Stage 1 free of any bot framework.**
